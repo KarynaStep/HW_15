@@ -38,3 +38,17 @@ function checkRepeatNumberRow(array3) {
 }
 
 console.log(checkRepeatNumberRow(array3));
+
+// в - 3
+array4 = [1, 23, 45, 76, 78, 98, 33, 3]
+
+function checkRepeatNumberRow(array4) {
+  for (let index = 0; index < array4.length; index++) {
+    if (array4.at(index) === array4.at(index + 1)) {
+      return true;
+    }
+  }
+  return false;
+}
+
+console.log(checkRepeatNumberRow(array4));
